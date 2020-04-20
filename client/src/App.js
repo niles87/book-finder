@@ -7,12 +7,12 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <>
+      <div>
         <Navbar />
         <Route exact path="/" component={Search} />
         <Route exact path="/books" component={Saved} />
         <Route exact path="/books/:id" component={Saved} />
-      </>
+      </div>
     </Router>
   );
 }
