@@ -1,19 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { List, ListItem } from "react";
 
 function Navbar() {
   return (
-    <nav>
-      <List>
-        <ListItem>
-          <Link to="/" />
-        </ListItem>
-        <ListItem>
-          <Link to="/books" />
-        </ListItem>
-      </List>
-    </nav>
+    <>
+      <nav className="navbar">
+        <List>
+          <ListItem>
+            <a href="/">Search Books</a>
+          </ListItem>
+          <ListItem>
+            <a href="/books">Saved Books</a>
+          </ListItem>
+        </List>
+      </nav>
+    </>
   );
 }
 
