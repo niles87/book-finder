@@ -1,23 +1,31 @@
 import React from "react";
-import { List, ListItem } from "../List";
+import "./style.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <List>
-        <ListItem>
-          <a className="navbar-brand" href="/">
-            Search Books
+      <div>
+        <h2 className="title">
+          <a className="link" href="/">
+            Book Finder
           </a>
-        </ListItem>
-      </List>
-      <List>
-        <ListItem>
-          <a className="navbar-brand" href="/books">
-            Saved Books
-          </a>
-        </ListItem>
-      </List>
+        </h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a className="link" href="/">
+              Search Books
+            </a>
+          </li>
+          |
+          <li>
+            <a className="link" href="/books">
+              Saved Books
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

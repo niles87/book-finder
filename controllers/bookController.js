@@ -1,4 +1,5 @@
 const db = require("../models");
+const axios = require("axios");
 require("dotenv").config();
 
 // Defining methods for the booksController
@@ -21,5 +22,6 @@ module.exports = {
   },
   searchForBook: function (req, res) {
     console.log(req.params);
+    axios.get();
   },
 };
