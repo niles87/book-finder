@@ -1,0 +1,13 @@
+.save {
+  background-color: #00008b;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.delete {
+  background-color: #dc143c;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+}

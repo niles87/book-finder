@@ -1,0 +1,16 @@
+.display {
+  max-width: 1080px;
+  height: 175px;
+  position: relative;
+  margin: 0 auto;
+  background-image: radial-gradient(#f7f7f7, #d6d6d6, #bbbbbb, #999999);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.display h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -5,6 +5,6 @@ const booksController = require("../../controllers/bookController");
 router.route("/").get(booksController.findAll).post(booksController.create);
 
 // Matches with "/api/books/:id"
-router.route("/:id").get(booksController.searchForBook).delete(booksController.remove);
+router.route("/:id").delete(booksController.remove).post(booksController.searchForBook);
 
 module.exports = router;

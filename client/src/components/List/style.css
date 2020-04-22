@@ -1,0 +1,17 @@
+.list-container {
+  max-width: 470px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.book-list {
+  width: 100%;
+}
+
+.list-item {
+  max-width: 450px;
+  min-width: 350px;
+  display: block;
+}

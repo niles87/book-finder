@@ -1,0 +1,27 @@
+.card {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.cardImage {
+  float: left;
+  margin-right: 10px;
+}
+
+.cardBody h4,
+.cardBody p {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cardFooter {
+  padding-bottom: 10px;
+}
+
+.cardFooter a {
+  text-decoration: none;
+  background-color: #999999;
+  padding: 5px;
+  border-radius: 8px;
+  color: #ffffff;
+}

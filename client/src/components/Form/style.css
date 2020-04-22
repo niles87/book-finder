@@ -1,8 +1,13 @@
 .form-container {
-  max-width: 480px;
+  max-width: 470px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   margin: 10px;
+}
+
+.form-container h1 {
+  text-align: center;
 }
 
 .form-container input {
