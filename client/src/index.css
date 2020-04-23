@@ -14,3 +14,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+html {
+  background-image: url("./images/book-shelf.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}

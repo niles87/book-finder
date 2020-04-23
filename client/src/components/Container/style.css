@@ -1,8 +1,10 @@
 .flex-container {
   max-width: 960px;
-  background-color: rgb(184, 248, 248);
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   flex-wrap: wrap;
+  color: #ffffff;
+  height: 500px;
+  overflow: scroll;
 }

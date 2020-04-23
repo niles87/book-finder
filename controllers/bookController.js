@@ -33,7 +33,7 @@ module.exports = {
   searchForBook: function (req, res) {
     axios
       .get(
-        `https://www.googleapis.com/books/v1/volumes?q=${req.params.id}&maxResults=5&orderBy=relevance&key=${apiKey}`
+        `https://www.googleapis.com/books/v1/volumes?q=${req.params.id}&orderBy=relevance&key=${apiKey}`
       )
       .then((data) => res.json(data.data));
   },
