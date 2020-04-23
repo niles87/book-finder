@@ -3,6 +3,8 @@
   color: #ffffff;
   border-radius: 8px;
   padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .delete {
@@ -10,4 +12,6 @@
   color: #ffffff;
   border-radius: 8px;
   padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }

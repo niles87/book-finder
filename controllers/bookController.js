@@ -12,7 +12,15 @@ module.exports = {
       .catch((err) => res.status(422).json(err));
   },
   create: function (req, res) {
-    db.Book.create(req.body)
+    const book = {
+      title: req.body.volumeInfo.title,
+      authors: req.body.volumeInfo.authors,
+      description: req.body.volumeInfo.description,
+      image: req.body.volumeInfo.imageLinks.smallThumbnail,
+      link: req.body.volumeInfo.previewLink,
+    };
+    console.log(book);
+    db.Book.create(book)
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },

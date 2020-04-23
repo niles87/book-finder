@@ -1,10 +1,11 @@
 .card {
   min-width: 300px;
   max-width: 400px;
+  display: flex;
+  flex-direction: row;
 }
 
 .cardImage {
-  float: left;
   margin-right: 10px;
 }
 
@@ -16,6 +17,8 @@
 
 .cardFooter {
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .cardFooter a {

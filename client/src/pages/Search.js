@@ -26,12 +26,7 @@ class Search extends Component {
     e.preventDefault();
     API.getBook(this.state.title).then((response) => {
       this.setState({ books: response.data.items, title: "" });
-      console.log(this.state.books);
     });
-  };
-
-  handleClick = () => {
-    // API.saveBook()
   };
 
   render() {
@@ -72,22 +67,24 @@ class Search extends Component {
                           alt={book.volumeInfo.title}
                         />
                       </CardImage>
-                      <CardBody>
-                        <h4>
-                          {book.volumeInfo.title} by {book.volumeInfo.authors}
-                        </h4>
-                        <p>{book.volumeInfo.description}</p>
-                      </CardBody>
-                      <CardFooter>
-                        <a
-                          href={book.volumeInfo.previewLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          preview
-                        </a>
-                        <Button save />
-                      </CardFooter>
+                      <div>
+                        <CardBody>
+                          <h4>
+                            {book.volumeInfo.title} by {book.volumeInfo.authors}
+                          </h4>
+                          <p>{book.volumeInfo.description}</p>
+                        </CardBody>
+                        <CardFooter>
+                          <a
+                            href={book.volumeInfo.previewLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            preview
+                          </a>
+                          <Button onClick={() => API.saveBook(book)} save />
+                        </CardFooter>
+                      </div>
                     </Card>
                   </ListItem>
                 ))}
