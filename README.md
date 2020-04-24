@@ -17,7 +17,7 @@ Search for your favorite books using the Google Books api. In order to use this 
 2. Add a `.env` file with a Google Books api-key saved as `APIKEY=<your key here>`.
 3. Run `npm start` then navigate to `localhost:3000` and start searching!
 
-If you would rather see the deployed version of the application click here.
+If you would rather see the deployed version of the application [click here](https://secure-everglades-97978.herokuapp.com/ "Book-Finder Deployed Page").
 
 ## Technologies
 
