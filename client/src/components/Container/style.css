@@ -7,5 +7,6 @@
   color: #ffffff;
   height: 500px;
   overflow: scroll;
+  padding-top: 10px;
   padding-bottom: 50px;
 }

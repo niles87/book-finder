@@ -1,9 +1,9 @@
 .display {
-  max-width: 1080px;
+  max-width: 1000px;
   height: 175px;
   position: relative;
   margin: 0 auto;
-  background-image: radial-gradient(#f7f7f7, #d6d6d6, #bbbbbb, #999999);
+  background-image: radial-gradient(#bbbbbb, #999999, #666666, #444444);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }

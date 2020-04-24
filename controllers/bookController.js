@@ -19,7 +19,6 @@ module.exports = {
       image: req.body.volumeInfo.imageLinks.smallThumbnail,
       link: req.body.volumeInfo.previewLink,
     };
-    console.log(book);
     db.Book.create(book)
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
